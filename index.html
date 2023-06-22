@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.css" integrity="sha512-Y1c7KsgMNtf7pIhrj/Ul2LhutImFYr+TsCmjB8mGAk+cgG1Vm8U1g7tvfmRr6yD5nds03Qgc6Mcb86MBKu1Llg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.css" integrity="sha512-Y1c7KsgMNtf7pIhrj/Ul2LhutImFYr+TsCmjB8mGAk+cgG1Vm8U1g7tvfmRr6yD5nds03Qgc6Mcb86MBKu1Llg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="grid-container full" id="orangeFirstSlide">
+      <div class="grid-x align-center">
+        <div class="large-6 small-11 medium-11 cell">
+          <div class="whiteArea">
+            <h4>$ORANGE</h4>
+            <img src="img/orange-bg.png" alt="">
+            <div class="content">
+              <p>Orange</p>
+              <p>Disclaimer** Please note that the information presented on this website is intended solely for informational purposes and should not be construed as financial, investment, or any other form of professional advice. Investing in cryptocurrencies involves inherent risks, and it is essential that you conduct your own thorough research before making any investment decisions. Orange and its team members are not responsible for any losses or damages that may arise from the information provided on this website or within the whitepaper.</p>
+            </div>
+          </div>
+        </div>
+        <div class="large-6 small-11 medium-11 cell">
+          <div class="orangeArea">
+            <p class="text-right floatingText">Buy on Dex</p>
+            <h2>ORANGE</h2>
+            <div class="content">
+              <p>In a realm where numbers intertwine with light, Digital and tangible merging in sight, A crypto's delight, a project takes flight, Sharing fortunes, sparkling and bright.</p>
+              <p>With noble aims, their course is set, Gathering orange NFTs, a treasure to get, Randomness given, without regret, Investors find hope, their dreams beset.</p>
+              <div class="copyAddress"><span id="copyCode">0x00000000000000000000000000</span> <span><img src="img/copy.png" alt="" onclick="copyText('copyCode');" id="copycodeBtn"></span></div>
+              <div class="quickLinks">
+                <a href="">White Paper</a>
+                <a href="">Chart</a>
+                <a href="">Twitter</a>
+              </div>
+              <div class="contact">
+                <p><a href="mailto:contact@orange.com">contact@orange.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/5.2.12/what-input.min.js" integrity="sha512-jdMp80Gf2e7K/JH3+mucRwyeRaqRPD+ykSpkmbBqxWMMCfEZEL9PF0zzF3JEgV4IVNj6eTjV8X41e7Gz5nNwyA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/foundation.min.js" integrity="sha512-xpawU2EKh0HLTLWu8khGczejw+OaWWr+JBcbFBWtRUIkkhuMRZZeEFxY0n51aeC9YF4jxOMzd0pTR9m0tiSvsQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js" integrity="sha512-+z66PuMP/eeemN2MgRhPvI3G15FOBbsp5NcCJBojg6dZBEFL0Zoi0PEGkhjubEcQF7N1EpTX15LZvfuw+Ej95Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Poppins:400,700']
+        }
+      });
+    </script>
+    <script>
+      function copyText(element) {
+      var $copyText = document.getElementById(element).innerText;
+      var button = document.getElementById("copycodeBtn");
+      navigator.clipboard.writeText($copyText).then(function() {
+        var originalText = button.innerText;
+        button.innerText = 'Copied!';
+        button.classList.add('copied');
+        setTimeout(function(){
+          button.innerText = originalText;
+          button.classList.remove('copied');
+          }, 1000);
+      },);
+    }
+    </script>
+    
+    
+  </body>
+</html>
